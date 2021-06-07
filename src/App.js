@@ -1,15 +1,10 @@
 import logo from './logo.svg';
 import './App.css';
-
+import Todolist from'./component/todoList';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-          <p class="Letter-Size">Todo list</p>
-      </header>
-      <div class="App-div">
-        <input class="push"></input>
-      </div>
+      <Todolist/>
     </div>
   );
 }
