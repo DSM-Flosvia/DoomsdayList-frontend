@@ -1,7 +1,7 @@
 function ListItem(e) {
     return (
         <div className="box">
-            <p classNmae="qwer">item</p>
+            <p classNmae="qwer"></p>
         </div>
     )
 }
