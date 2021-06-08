@@ -4,7 +4,16 @@ import { useState } from 'react';
 function TodoIist() {
   const [list,setList]=useState([])
   const [listitem,setListitem]=useState()
-  
+  // fetch("https://api.thecatapi.com/v1/images/search", {
+  //   method:"GET",
+  //   headers: {
+  //     'content-type': 'application/json'
+  //   }
+  // }).then((e) => {
+  //  return(e.json())
+  // } ).then((e) => {
+  //   console.log(e)
+  // })
   return (
     <>
       <header className="App-header">
@@ -32,7 +41,7 @@ function TodoIist() {
       <div className="listcontaner">
         {list.map(function(e) {
           return (
-            <ListItem />
+            <ListItem item={e}/>
           )
         })}
       </div>
